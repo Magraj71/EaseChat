@@ -7,6 +7,8 @@ import Authroutes from "./routes/Authroutes.js";
 import contactsRoutes from "./routes/ContactsRoutes.js";
 import setSocket from "./socket.js";
 import messagesRoute from "./routes/MessagesRoute.js";
+import serverless from "serverless-http";
+
 
 // Load environment variables
 dotenv.config();
@@ -60,7 +62,7 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Start the server
+//Start the server
 const server = app.listen(port, () => {
     console.log(`🚀 Server is running at http://localhost:${port}`);
 });
@@ -76,3 +78,6 @@ process.on("SIGINT", async () => {
         process.exit(0);
     });
 });
+
+
+export const handler = serverless(app);
