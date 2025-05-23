@@ -50,6 +50,6 @@ This project is open source and available under the MIT License.
 
 ---
 🙋‍♂️ Author
-Magraj Kumar
+Magraj Jakhar
 GitHub: @Magraj71
 Let me know if you'd like me to auto-fill deployment links, tech logos, or generate badges for GitHub (like build status, license, etc.).
